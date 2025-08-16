@@ -29,6 +29,4 @@ while(running){
             window.alert("Too high! Try again.");
         }
     }
-
-    running = false;
 }

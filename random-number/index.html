@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="card-div">
+        <div id="card-body">
+            <h1 id="card-title">Guess the Number Game</h1>
+            <p id="card-text">Try to guess the number between 1 and 100.</p>
+            <p id="attempts-text">You have 5 attempts to guess the number.</p>
+            <button id="start-game" class="btn btn-primary">Start Game</button>
+            <button id="restart-game" class="btn btn-secondary">Restart Game</button>
+            <br>
+
+            <div id="wrapper">
+                <form id="form">
+                    <label for="guess-input" id="guess-text">Enter your guess:</label>
+                    <input type="number" id="guess-input" name="guess-input" min="1" max="100" required>
+                    <input type="submit" id="guess-button" class="btn btn-success" value="Guess">
+                    <input type="reset" id="reset-button" class="btn btn-danger" value="Reset">
+                </form>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
