@@ -18,6 +18,16 @@ while(running){
     }
     else if(guess < minNumber || guess > maxNumber) {
         window.alert(`Please enter a number between ${minNumber} and ${maxNumber}.`);
+    }else{
+        attempts++;
+        if(guess === answer){
+            window.alert(`Congratulations! You've guessed the number in ${attempts} attempts.`);
+            running = false;
+        }else if(guess < answer){
+            window.alert("Too low! Try again.");
+        }else{
+            window.alert("Too high! Try again.");
+        }
     }
 
     running = false;
